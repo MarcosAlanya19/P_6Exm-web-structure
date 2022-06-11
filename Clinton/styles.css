@@ -78,7 +78,12 @@ section{
     grid-gap: 6rem;
     align-items: center;
 }
-
+.home-img div{
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    left: 70%;
+}
 .home-text h5{
     color: var(--text-color);
     font-size: 25px;
@@ -89,7 +94,7 @@ section{
 .home-text h1{
     font-size: var(--big-font);
     color: var(--text-color);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1;
     margin: 0 0 20px;
 }
