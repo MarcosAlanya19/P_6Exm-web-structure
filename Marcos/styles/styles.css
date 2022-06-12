@@ -9,34 +9,48 @@
     background-image: url(/Marcos/img/Back-Contact.jpg);
     background-size: cover;
     position: absolute;
+    height: 75rem;
     width: 100%;
-    height: 100%;
 
 }
-.contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* grid2 */
+.content-center {
+
+    display: grid; 
+    grid-template-columns: 0.5fr 0.9fr 1fr 0.4fr; 
+    grid-template-rows: 0.5fr 0.7fr 2.3fr 0.5fr; 
+    gap: 0px 1px; 
+    grid-template-areas: 
+    ". . . ."
+    ". contacto contacto ."
+    ". grid grid1 ."
+    ". . . ."; 
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.contacto { grid-area: contacto; }
+.grid { grid-area: grid; }
+.grid1 { grid-area: grid1; }
 /* navegador */
-.nav-citrica{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.nav-citrica {
+    display: grid; 
+    grid-template-columns: 0.7fr 1.2fr 2.3fr 0.6fr 0.6fr 0.6fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 1px; 
+    grid-template-areas: 
+    ". logo . home showcase contact ."; 
     background-color: #243443;
-    padding: 1rem 1rem 1rem 1rem;
-}
-.nav-right{
-    display: flex;
-    justify-content: end;
-    
+    padding: 1rem 1rem 1rem 1rem; }
+.logo { grid-area: logo; }
+.home { grid-area: home; }
+.showcase { grid-area: showcase; }
+.contact { grid-area: contact; }
 
+.link-1{
+    text-decoration: none;
+    padding: 1rem;
+}
+:hover.link-1{
+    color: #eae738;
+    background-color: #3f4b67;
 }
 /* encabezado */
 .h1{
@@ -84,7 +98,7 @@
     background-color:#373D4D;
     border: solid 1px grey;
     outline: none;
-    width: 12rem;
+    width: 13.5rem;
 }
 .select-box{
     margin-top: 0.2em;
@@ -93,7 +107,7 @@
     background-color:#373D4D;
     border: solid 1px grey;
     outline: none;
-    width: 14.1rem;
+    width: 15.6rem;
 }
 .form-date{
     padding-bottom: 2.5rem;
@@ -105,7 +119,13 @@
     background-color:#373D4D;
     border: solid 1px grey;
     outline: none;
-    width: 26rem;
+    width: 30rem;
+    margin-right: 1.5rem;
+
+}
+.area{
+    display: flex;
+    justify-content: center;
 }
 textarea{
     resize:none;
@@ -116,7 +136,7 @@ textarea{
 .font-submit{
     color: #243443;
     font-size: 14px;
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 1.8rem;
     font-weight: 800;
     background-color: #eae738;
     border-radius: 1.4rem;
@@ -129,8 +149,4 @@ textarea{
 /* formulario parte derecha */
 .container-left{
     margin-right: 1rem;
-}
-.footer-form{
-    display: flex;
-    justify-content: center;
 }
