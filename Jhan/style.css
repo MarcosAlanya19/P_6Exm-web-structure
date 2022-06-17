@@ -1,0 +1,113 @@
+body{
+    font-family: Georgia, Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 4em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-porta{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/8d4bfe_92a2886a9260408e8f22151008c8c788_mv2.gif);
+    background-size: 200%;
+    animation: 10s infinite linear alternate;
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.details{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    color: white;
+}
+.details h1{
+    font-size: 70px;
+    font-weight: 100;
+    
+}
+.details p{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+
+
+.header{
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    letter-spacing: 5px;
+    font-size: 1.4em;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 1rem 0.5rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: #4a4a4a;
+}
+
+
+
+.container-porta{
+    padding-top: 12rem;
+}
+
+.footer{
+    background:#333;
+    padding: 4rem 0;   
+    text-align: center;
+    margin-top: 6rem;
+}
+.footer p{
+    color: white;
+}
