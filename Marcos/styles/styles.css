@@ -24,6 +24,11 @@
     color: #15536C;
     text-decoration: none;
 }
+.info_h3_h3{
+    font-size: 1.2em;
+    color: #2fbf71;
+    text-decoration: none;
+}
 @media(min-width: 992px){
     .info{
         display: flex;
@@ -89,8 +94,8 @@
     color: #243443;
     font-size: 14px;
     padding: 0.8rem 1.8rem;
-    font-weight: 800;
-    background-color: #a7d1ff;
+    font-weight: 900;
+    background-color: #78dba4;
     border-radius: 1.4rem;
 }
 .submit:hover{
@@ -108,7 +113,7 @@
 .link{
     text-decoration: none;
     font-weight: 600;
-    color: #125254;
+    color: #2fbf71;
 }
 :hover.link{
     color: #0097ff;
@@ -157,4 +162,13 @@
     .form_left{
         padding: 2rem 3rem 3rem 3rem;
     }
+}
+.footer{
+    background:#333;
+    padding: 4rem 0;   
+    text-align: center;
+    margin-top: 6rem;
+}
+.footer p{
+    color: white;
 }

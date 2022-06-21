@@ -39,7 +39,7 @@ span{
     color: #fff;
     text-decoration: none;
     font-size: 1.3em;
-    font-weight: 510;
+    font-family: 'Rubik', sans-serif;
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 .nav_item::after{

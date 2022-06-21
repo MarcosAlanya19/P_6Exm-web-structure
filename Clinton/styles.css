@@ -5,8 +5,6 @@
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
-    scroll-padding: 2rem;
 }
 :root{
     --bg-color:#10101a;
@@ -19,12 +17,6 @@
     --deg: 1;
     --x: -50%;
     --y: -50%;
-  
-}
-
-body{
-    background: var(--bg-color);
-    color: var(--text-color);
 }
 header{
     position: fixed;
@@ -39,38 +31,10 @@ header{
     padding: 24px 14%;
     transition: .3s;
 }
-.logo{
-    color: var(--text-color);
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-span{
-    color: var(--main-color);
-}
-.navbar{
-    display: flex;
-}
-.navbar a{
-    color: var(--text-color);
-    padding: 1rem;
-    padding: 10px 20px;
-    font-weight: 500;
-}
-.navbar a:hover{
-    background: var(--main-color);
-    transition: .3s;
-}
-#menu-icon{
-    font-size: 28px;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
-}
 section{
     padding: 120px 14% ;
 }
 .home{
-    position: relative;
     height: 100vh;
     width: 100%;
     display: grid;
@@ -78,23 +42,21 @@ section{
     grid-gap: 6rem;
     align-items: center;
 }
-
 .home-text h5{
-    color: var(--text-color);
+    color: #15536C;
     font-size: 25px;
     font-weight: 500;
     margin: 0 0 20px;
-
 }
 .home-text h1{
     font-size: var(--big-font);
-    color: var(--text-color);
+    color: #15536C;
     font-weight: 800;
     line-height: 1;
     margin: 0 0 20px;
 }
 .home-text h6{
-    color: var(--text-color);
+    color: #15536C;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 25px;
@@ -105,7 +67,7 @@ section{
     font-weight: 300;
     line-height: 2rem;
     margin-bottom: 1.5rem;
-    color: var(--2nd-main-color);
+    color: #000000;
 }
 .btn{
     background: var(--main-color);
@@ -124,4 +86,13 @@ section{
     background: var(--text-color);
     color: var(--main-color);
     box-shadow: 4px px var(--main-color);
+}
+.footer{
+    background:#333;
+    padding: 4rem 0;   
+    text-align: center;
+    margin-top: 6rem;
+}
+.footer p{
+    color: white;
 }
